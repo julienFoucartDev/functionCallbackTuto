@@ -11,7 +11,16 @@
 
     <script type="text/javascript">
 
+        function sayWelcomTo(msg, callback){ 
+            var message = "Hello, Welcom to " + msg;
+            callback(message); 
+        }
         
+        function displayMsg(msg){
+            console.log(msg);
+        }
+        sayWelcomTo("WayToLearnX.com!", displayMsg);
+
     </script>
 </body>
 </html>
